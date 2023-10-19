@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Rastreamento de Pedido</title>
+    <style>
+        /* Estilos CSS podem ser personalizados */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .back-button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Rastreamento de Pedido</h1>
+    </header>
+    <div class="container">
+        <h2>Insira o número de rastreamento do seu pedido</h2>
+        <form id="tracking-form">
+            <input type="text" id="tracking-number" placeholder="Número de Rastreamento" required>
+            <button type="submit">Rastrear Pedido</button>
+        </form>
+        <div id="tracking-results">
+            <!-- Os resultados do rastreamento serão exibidos aqui -->
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("tracking-form").addEventListener("submit", function (e) {
+            e.preventDefault();
+            const trackingNumber = document.getElementById("tracking-number").value;
+            // Aqui você pode fazer uma solicitação a um serviço de rastreamento real e exibir os resultados no elemento "tracking-results"
+            // Isso requer conhecimentos em programação e integração com um serviço de rastreamento real.
+            // Os resultados podem ser exibidos usando JavaScript ou inseridos no HTML via AJAX.
+        });
+    </script>
+
+<div class="Voltar">
+    <ul>
+       <a class="back-button" href="paginainicial.html">Voltar</a>
+      
+    </ul>
+</div>
+
+</body>
+</html>

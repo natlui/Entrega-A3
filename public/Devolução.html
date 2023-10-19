@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Devolução de Pedidos de Delivery</title>
+    <style>
+        /* Estilos CSS personalizados */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        h1 {
+            margin: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        /* Estilos para o formulário */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        input, textarea {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #555;
+        }
+
+        .back-button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Devolução de Pedidos de Delivery</h1>
+    </header>
+    <div class="container">
+        <h2>Preencha o formulário de devolução</h2>
+        <form action="processar_devolucao.php" method="post">
+            <label for="nome">Cliente:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="numero_pedido">Número do Pedido:</label>
+            <input type="text" id="numero_pedido" name="numero_pedido" required>
+            <label for="funcionario">Funcionário Responsável:</label>
+            <input type="text" id="funcionario" name="funcionario" required>
+            <label for="horario">Data e Hora :</label>
+            <input type="datetime" id="horario" name="horario" required>
+            <label for="motivo">Motivo da Devolução:</label>
+            <textarea id="motivo" name="motivo" rows="5" required></textarea>
+            <button type="submit">Enviar Devolução</button>
+        </form>
+    </div>
+
+    <div class="Voltar">
+        <ul>
+           <a class="back-button" href="paginainicial.html">Voltar</a>
+          
+        </ul>
+    </div>
+
+</body>
+</html>

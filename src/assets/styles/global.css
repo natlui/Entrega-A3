@@ -1,0 +1,64 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.page {
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 250px 8fr;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.sidebar {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.content {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.bigbutton {
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.bigbutton >svg {
+    width: 50px;
+}
+
+p {
+    color: black;
+    font-size: 16px;
+}
+
+h4 {
+    color: black;
+    font-size: 24px;
+}
+
+.sidebar-button{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.sidebar-button >svg {
+    width: 30px;
+}
+
+.sidebar-button >p {
+    margin: 0px;
+    font-size: 20px;
+    margin-left: 5px;
+}
+
+a {
+    text-decoration: none;
+  }

@@ -12,13 +12,14 @@ import {  ReactComponent as HomeIcon } from '../assets/icons/home.svg'
 import {  ReactComponent as ClientesAssociadosIcon } from '../assets/icons/clientes-associados.svg'
 import {  ReactComponent as PedidosCanceladosIcon } from '../assets/icons/pedidos-cancelados.svg'
 import {  ReactComponent as DetalhesDescarteIcon } from '../assets/icons/detalhes-descarte.svg'
-import FAQ from "../pages/FAQ";
+
+
 
 function Layout() {
     return (
         <div className="page">
             <div className="sidebar">
-                <h2>Projeto A3</h2>
+                <h2 >Descartech</h2>
                 <Nav defaultActiveKey="/home" className="flex-column">
                     <Nav.Link>
                         <Link to="">
@@ -45,10 +46,10 @@ function Layout() {
                         </Link>
                     </Nav.Link>
                     <Nav.Link eventKey="link-3">
-                        <Link to="detalhes-descarte">
+                        <Link to="detalhes-da-filial">
                             <div className="sidebar-button">
                                 <DetalhesDescarteIcon/>
-                                <p>Detalhes de Descarte</p>
+                                <p>Detalhes da Filial</p>
                             </div>
                         </Link>
                     </Nav.Link>

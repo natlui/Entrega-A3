@@ -19,7 +19,7 @@ const Pages = () => {
 
         <Route path="" element={<Dashboard />} />
         <Route path="clientes-associados" element={<ClientesAssociados />} />
-        <Route path="detalhes-filial" element={<DetalhesFilial />} />
+        <Route path="detalhes-da-filial" element={<DetalhesFilial />} />
         <Route path="pedidos-cancelados" element={<PedidosCancelados />} />
         <Route path="FAQ" element={<FAQ />} />
         

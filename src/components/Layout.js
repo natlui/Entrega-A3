@@ -11,7 +11,11 @@ import { Nav } from 'react-bootstrap';
 import {  ReactComponent as HomeIcon } from '../assets/icons/home.svg'
 import {  ReactComponent as ClientesAssociadosIcon } from '../assets/icons/clientes-associados.svg'
 import {  ReactComponent as PedidosCanceladosIcon } from '../assets/icons/pedidos-cancelados.svg'
-import {  ReactComponent as DetalhesDescarteIcon } from '../assets/icons/detalhes-descarte.svg'
+
+import {  ReactComponent as ChatIcon } from '../assets/icons/chat.svg'
+import {  ReactComponent as HomeFilialIcon } from '../assets/icons/home-filial.svg'
+import {  ReactComponent as QuestionIcon } from '../assets/icons/question.svg'
+import logo from '../assets/img/logo.png'
 
 
 
@@ -19,10 +23,12 @@ function Layout() {
     return (
         <div className="page">
             <div className="sidebar">
-                <h2 >Descartech</h2>
+            <img  src={logo } className ="logo"/>
+                <h2 className="Name" >Descartech</h2>
                 <Nav defaultActiveKey="/home" className="flex-column">
                     <Nav.Link>
                         <Link to="">
+                       
                             <div className="sidebar-button">
                                 <HomeIcon/>
                                 <p>Home</p>
@@ -30,14 +36,6 @@ function Layout() {
                         </Link>
                     </Nav.Link>
                     <Nav.Link eventKey="link-1">
-                        <Link to="pedidos-cancelados">
-                            <div className="sidebar-button">
-                                <PedidosCanceladosIcon/>
-                                <p>Pedidos Cancelados</p>
-                            </div>
-                        </Link>
-                    </Nav.Link>
-                    <Nav.Link eventKey="link-2">
                         <Link to="clientes-associados">
                             <div className="sidebar-button">
                                 <ClientesAssociadosIcon/>
@@ -45,19 +43,27 @@ function Layout() {
                             </div>
                         </Link>
                     </Nav.Link>
-                    <Nav.Link eventKey="link-3">
+                    <Nav.Link eventKey="link-2">
                         <Link to="detalhes-da-filial">
                             <div className="sidebar-button">
-                                <DetalhesDescarteIcon/>
+                                <HomeFilialIcon/>
                                 <p>Detalhes da Filial</p>
                             </div>
                         </Link>
                     </Nav.Link>
-                    <Nav.Link eventKey="link-4">
+                    <Nav.Link eventKey="link-3">
                         <Link to="FAQ">
                             <div className="sidebar-button">
-                                <DetalhesDescarteIcon/>
+                                <QuestionIcon/>
                                 <p>FAQ</p>
+                            </div>
+                        </Link>
+                    </Nav.Link>
+                    <Nav.Link eventKey="link-5">
+                        <Link to="Perguntas">
+                            <div className="sidebar-button">
+                                <ChatIcon/>
+                                <p>Perguntas</p>
                             </div>
                         </Link>
                     </Nav.Link>
@@ -65,24 +71,7 @@ function Layout() {
             </div>
             <div className="content">
                 <Container>
-                    <Navbar className="bg-body-tertiary justify-content-between">
-                        <Form inline>
-                        </Form>
-                        <Form inline>
-                            <Row>
-                                <Col xs="auto">
-                                    <Form.Control
-                                        type="text"
-                                        placeholder="Search"
-                                        className=" mr-sm-2"
-                                    />
-                                </Col>
-                                <Col xs="auto">
-                                    <Button type="submit">Submit</Button>
-                                </Col>
-                            </Row>
-                        </Form>
-                    </Navbar>
+                  
                     <Container>
                         <Outlet />
                     </Container>

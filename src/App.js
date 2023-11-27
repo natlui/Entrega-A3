@@ -2,8 +2,8 @@ import Layout from './components/Layout';
 import ClientesAssociados from './pages/ClientesAssociados';
 import Dashboard from './pages/Dashboard';
 import DetalhesFilial from './pages/DetalhesFilial';
-import PedidosCancelados from './pages/PedidosCancelados';
 import FAQ from './pages/FAQ';
+import Perguntas from './pages/Perguntas';
 import { Routes, Route } from "react-router-dom";
 
 const App = () => {
@@ -20,8 +20,9 @@ const Pages = () => {
         <Route path="" element={<Dashboard />} />
         <Route path="clientes-associados" element={<ClientesAssociados />} />
         <Route path="detalhes-da-filial" element={<DetalhesFilial />} />
-        <Route path="pedidos-cancelados" element={<PedidosCancelados />} />
         <Route path="FAQ" element={<FAQ />} />
+        <Route path="Perguntas" element={<Perguntas />} />
+  
         
       </Route>
     </Routes>

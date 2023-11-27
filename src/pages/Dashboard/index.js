@@ -122,14 +122,14 @@ const Numdescartado = faker.datatype.number({
       <Container>
         
         <Row className="mt-3 mb-3">
-          <Col>
+          <Col className="Cancelados">
             <BigButton value={`${Numcancelado}`} name="Pedidos Cancelados" icon={<PedidosCanceladosIcon />} />
           </Col>
-          <Col>
+          <Col className="Doados" >
             <BigButton value={`${Numdoado}`} name="Pedidos Doados" icon={<Doados />} />
           </Col>
-          <Col>
-            <BigButton value={`${Numdescartado}`} name="Pedidos Descartados" icon={<PedidosDescartadosIcon />} />
+          <Col className="Descartados">
+            <BigButton  value={`${Numdescartado}`} name="Pedidos Descartados" icon={<PedidosDescartadosIcon />} />
           </Col>
           
         </Row>

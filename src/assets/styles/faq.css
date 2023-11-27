@@ -10,7 +10,8 @@
   }
   
   .faq-card {
-    border: 1px solid #ddd;
+    border: 2px solid #36a0e7;
+    border-radius: 10px;
     margin: 10px;
     padding: 10px;
     max-width: 400px;

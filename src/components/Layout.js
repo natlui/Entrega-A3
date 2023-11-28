@@ -23,7 +23,7 @@ function Layout() {
     return (
         <div className="page">
             <div className="sidebar">
-            <img  src={logo } className ="logo"/>
+            <img  src={logo} className ="logo"/>
                 <h2 className="Name" >Descartech</h2>
                 <Nav defaultActiveKey="/home" className="flex-column">
                     <Nav.Link>

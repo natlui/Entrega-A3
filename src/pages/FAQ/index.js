@@ -16,15 +16,15 @@
     const faqData = [
         {
         id: 1,
-        question: 'Como posso adicionar novos cards?',
+        question: 'Oque é Descartech?',
         answer: 'Para adicionar novos cards, basta modificar a matriz `faqData` no componente App.',
         },
         {
         id: 2,
-        question: 'Como faço para expandir/contrair um card?',
+        question: 'Como funciona a Descartech?',
         answer: 'Clique na pergunta para expandir ou contrair a resposta.',
         },
-        // Adicione mais cards conforme necessário
+       
     ];
 
     const [cards, setCards] = useState(faqData.map((faq) => ({ ...faq, isOpen: false })));
